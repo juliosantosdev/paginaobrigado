@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Jost', sans-serif;
 }
 
@@ -287,19 +288,7 @@ section.topo-do-site .flex {
 }
 
 /* Consulta de mídia para diminuir o tamanho da fonte quando a largura da tela for menor ou igual a 1020px */
-@media (max-width: 1020px) {
-    .topo-do-site h1 {
-        font-size: 50px;
-        /* Altere para o tamanho desejado */
-        line-height: 58px;
-        /* Altere para o tamanho desejado */
-    }
 
-    .topo-do-site .txt-topo-site p {
-        font-size: 20px;
-        /* Altere para o tamanho desejado */
-    }
-}
 
 
 /* Especialidades*/
@@ -622,9 +611,29 @@ footer .line-footer p a {
 }
 
 /* responsividade */
+
+@media (max-width: 1020px) {
+    .topo-do-site h1 {
+        font-size: 50px;
+        /* Altere para o tamanho desejado */
+        line-height: 58px;
+        /* Altere para o tamanho desejado */
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 20px;
+        /* Altere para o tamanho desejado */
+    }
+}
+
 @media screen and (max-width: 1020px) {
 
     /* Geral */
+    
+    .site-content {
+    flex: 1 0 auto;
+    padding-top: 10px;
+}
     .flex {
         flex-direction: column;
     }
@@ -681,19 +690,26 @@ footer .line-footer p a {
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 20px 4%;
     }
+
+    
 
     .topo-do-site .txt-topo-site p {
-        
+        font-size: 20px;
         margin: 10px 0;
+        text-align: justify;
+        text-align: center;
     }
 
+    
+
     .txt-topo-site h1 {
-        font-size: 22px;
-        line-height: 30px;
-        padding-top: 50px;
+        font-size: 48px;
+        line-height: 55px;        
+        padding-bottom: 20px;
         text-align: center;
+    
     }
 
     .topo-do-site .img-topo-site img {
@@ -707,7 +723,7 @@ footer .line-footer p a {
     }
 
     section.sobre {
-        padding: 80px 8%;
+        padding: 0px 8%;
 
     }
 
@@ -778,8 +794,8 @@ footer .line-footer p a {
 
     .formulario {
         text-align: center;
-
-
-    
+  
     }
+
+   
 }
